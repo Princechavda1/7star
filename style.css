@@ -337,29 +337,29 @@ nav.show div.icon-close {
 }
 
 #about .image {
-  position: relative;
-  display: inline-block;
-}
-
-#about .image img {
-  position: relative;
-  width: 400px;       /* desktop width */
-  height: auto;       /* keep landscape ratio */
-  max-width: 100%;
-  border-radius: 0.25rem;
+ position: relative;
 }
 
 #about .image::before {
-  content: '';
-  position: absolute;
-  top: -8.3%;
-  left: -10%;         /* offset like a shadow */
-  z-index: 0;
-  width: 100%;        /* match image width */
-  height: 100%;       /* match image height */
-  background: var(--base-color-second);
-  border-radius: 0.25rem;
+ content: '';
+ height: 100%;
+ width: 100%;
+ background: var(--base-color-second);
+ position: absolute;
+ top: -8.3%;
+ left: -33%;
+ z-index: 0;
 }
+
+#about .image img {
+ position: relative;
+}
+
+#about .image img,
+#about .image::before {
+ border-radius: 0.25rem;
+}
+
 
 /* 📱 Mobile adjustments */
 @media (max-width: 768px) {
