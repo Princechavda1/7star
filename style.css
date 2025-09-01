@@ -365,14 +365,14 @@ nav.show div.icon-close {
 @media (max-width: 768px) {
   #about .image img {
     width: 300px;     /* smaller image for mobile */
-    right: -08%;
+    right: -05%;
   }
 
   #about .image::before {
     width: 70%;      /* still follows image */
     height: 100%;
-    left: 25%;        /* smaller offset */
-    top: -15%;
+    left: 22%;        /* smaller offset */
+    top: -18%;
   }
 }
 
